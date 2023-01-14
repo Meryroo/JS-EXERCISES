@@ -13,3 +13,17 @@ const counterWords = [
     'upgrade',
     'code'
   ];
+
+ 
+  let res = []
+  
+  for (const word of counterWords){
+    if (res[word]){
+        res[word] ++
+    }
+    else {
+        res[word] = 1
+    }
+  }
+  console.log(res)
+  
