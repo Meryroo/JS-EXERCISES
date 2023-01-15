@@ -14,5 +14,14 @@ const duplicates = [
     'soda'
   ];
 
-  
- 
+const noDuplicatesList = (list) =>{
+  let removeDuplicates =[]
+  duplicates.forEach((food) => {
+    if (removeDuplicates.includes(food) == false){
+removeDuplicates.push(food)
+    }
+  })
+  return removeDuplicates
+}
+
+  console.log(noDuplicatesList(duplicates))

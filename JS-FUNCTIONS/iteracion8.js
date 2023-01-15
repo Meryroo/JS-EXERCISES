@@ -14,16 +14,18 @@ const counterWords = [
     'code'
   ];
 
- 
   let res = []
-  
-  for (const word of counterWords){
-    if (res[word]){
-        res[word] ++
-    }
-    else {
-        res[word] = 1
-    }
+  const finalCountWords = (list) =>{
+    
+    for (const word of counterWords){
+      if (res[word]){
+          res[word] ++
+      }
+      else {
+          res[word] = 1
+      }
+    }   
+    return res
   }
-  console.log(res)
-  
+ 
+  console.log(finalCountWords(counterWords))
