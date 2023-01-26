@@ -6,13 +6,12 @@ const texto = 'Ajolote'
 const findArrayIndex = (bichos, texto) =>{
     for (let i = 0; i < bichos.length; i++){
         const bicho = bichos[i]
-        if ( bicho === texto){
+        if (bicho === texto){
             return i
         }
     }
    
 }
-
-
-   
 console.log(findArrayIndex(bichos, texto))
+   
+
